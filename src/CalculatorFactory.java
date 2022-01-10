@@ -7,6 +7,8 @@ public class CalculatorFactory {
                 return new Multiplication();
             case "/":
                 return new Division();
+            case "-":
+                return new Sub();
             default:
                 throw new Exception("Wrong operation");
         }
